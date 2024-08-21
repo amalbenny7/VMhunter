@@ -14,7 +14,7 @@ const makeAPICall = async (options) => {
     "Authorization"
   ] = `Bearer ${localStorage.getItem("accessToken")}`;
   try {
-    axios.defaults.baseURL = "http://localhost:8080";
+    axios.defaults.baseURL = "http://51.21.39.185:8080/API";
 
     const fetchPro = axios({ ...options });
 
